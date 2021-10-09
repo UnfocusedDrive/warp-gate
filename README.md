@@ -5,6 +5,7 @@ Includes:
 - Webpack
 - React 16.8
 - Styleguide
+- NURVUS UI Components
 
 
 ### Getting Started
