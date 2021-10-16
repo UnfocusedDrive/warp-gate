@@ -13,7 +13,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js|\.jsx$/,
+        test: /\.js$|\.jsx$/,
         // temp allow usage of externals...
         // https://stackoverflow.com/questions/53134659/webpack-doesnt-recognize-jsx-code-at-node-modules
         // exclude: /node_modules/,
