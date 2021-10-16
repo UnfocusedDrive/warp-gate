@@ -1,12 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-// import Button from '../node_modules/@nurvus/ui/src/components/Button.jsx';
-import { Button }  from '@nurvus/ui';
-
+import { Button } from '@nurvus/ui';
 
 const App = () => {
-  return <Button>asdasd</Button>;
+  return <Button>I am Button</Button>;
 }
 
 ReactDOM.render(
