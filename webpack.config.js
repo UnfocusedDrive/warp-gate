@@ -6,7 +6,6 @@ module.exports = {
     contentBase: './dist',
   },
   entry: './src/index.js',
-  // entry: './src/app.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -36,7 +35,7 @@ module.exports = {
     ]
   },
   plugins: [
-    // OPTIONS: https://github.com/jantimon/html-webpack-plugin#options
+    // OPTIONS DOC: https://github.com/jantimon/html-webpack-plugin#options
     new HtmlWebpackPlugin({
       title: 'Warp Gate'
     })

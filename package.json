@@ -6,7 +6,7 @@
   "main": "src/index.js",
   "scripts": {
     "watch": "webpack --watch",
-    "start": "webpack serve",
+    "start": "webpack serve --open",
     "start-styleguide": "webpack serve --config styleguide/webpack.config.js",
     "styleguide": "styleguidist server --open",
     "styleguide:build": "styleguidist build",
