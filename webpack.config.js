@@ -35,5 +35,10 @@ module.exports = {
       }
     ]
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [
+    // OPTIONS: https://github.com/jantimon/html-webpack-plugin#options
+    new HtmlWebpackPlugin({
+      title: 'Warp Gate'
+    })
+  ],
 };
