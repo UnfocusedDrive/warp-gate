@@ -5,13 +5,13 @@
   "private": true,
   "main": "src/index.js",
   "scripts": {
-    "watch": "webpack --watch",
+    "build": "webpack",
     "start": "webpack serve --mode=development --open",
     "start:production": "webpack serve --mode=production --open",
     "start-styleguide": "webpack serve --config styleguide/webpack.config.js",
     "styleguide": "styleguidist server --open",
     "styleguide:build": "styleguidist build",
-    "build": "webpack"
+    "watch": "webpack --watch"
   },
   "dependencies": {
     "@nurvus/ui": "git+https://github.com/UnfocusedDrive/nurvus-design-system.git#main",

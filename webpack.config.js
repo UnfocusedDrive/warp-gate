@@ -39,9 +39,10 @@ module.exports = {
     ]
   },
   plugins: [
-    // OPTIONS DOC: https://github.com/jantimon/html-webpack-plugin#options
+    // HtmlWebpackPlugin doc: https://github.com/jantimon/html-webpack-plugin#options
     new HtmlWebpackPlugin({
-      title: 'Warp Gate'
+      title: 'CSS Animation Factory',
+      templateContent: '<div id="app"></div>'
     })
-  ],
+  ]
 };
