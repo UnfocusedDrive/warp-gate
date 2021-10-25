@@ -41,8 +41,9 @@ module.exports = {
   plugins: [
     // HtmlWebpackPlugin doc: https://github.com/jantimon/html-webpack-plugin#options
     new HtmlWebpackPlugin({
-      title: 'CSS Animation Factory',
-      templateContent: '<div id="app"></div>'
+      title: 'Warp Gate',
+      // Seems to be a bug using this parameter.
+      // templateContent: '<div id="app"></div>'
     })
   ]
 };

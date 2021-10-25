@@ -4,10 +4,10 @@ import { Button } from '@nurvus/ui';
 import Data from './data/data.json';
 
 const App = () => {
-  return <Button>I am Button</Button>;
+  return <Button>Your build is successful.</Button>;
 }
 
 ReactDOM.render(
   <App />,
-  document.getElementById('app')
+  document.body.appendChild(document.createElement('div'))
 );
