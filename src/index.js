@@ -1,13 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Button } from '@nurvus/ui';
+import Spawn from '@nurvus/spawn';
 import Data from './data/data.json';
+import './index.scss';
 
 const App = () => {
-  return <Button>Your build is successful.</Button>;
+  return (
+    <div>
+      <Button>Your build is successful.</Button>
+    </div>
+  );
 }
 
 ReactDOM.render(
   <App />,
-  document.body.appendChild(document.createElement('div'))
+  document.body.appendChild(Spawn({
+    style: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
+    }
+  }))
 );
