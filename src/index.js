@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Button } from '@nurvus/ui';
-import Spawn from '@nurvus/spawn';
+import Spawn from '@unfocused/spawn';
 import Data from './data/data.json';
 import './index.scss';
 
