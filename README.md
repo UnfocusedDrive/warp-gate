@@ -2,7 +2,7 @@
 Rapidly deploy modern web apps.
 
 ### Getting Started
-Includes the follow pre-packaged items:
+Includes the following pre-packaged items:
 
 #### Tools
 - Webpack (v5) - For module bundling
