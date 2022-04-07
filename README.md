@@ -3,12 +3,19 @@ Rapidly deploy modern web apps.
 
 ### Getting Started
 Includes the follow pre-packaged items:
+
+#### Tools
 - Webpack (v5) - For module bundling
-- React (v16.8) - ReactJS Framework
-- Spawn Engine (v0) - Stateless virtual DOM Generator
 - Sass (v1) - CSS Precompiler
-- Styleguide (v11) - React Component Dev/Documentation Environment
+- Basic CI/CD workflow template
+
+#### React
+- React (v16.8) - ReactJS Framework
+- Styleguidist (v11) - React Component Dev/Documentation Environment
 - NURVUS UI Components (v0) - React Component Library
+
+#### More
+- Spawn Engine (v0) - Stateless virtual DOM Generator
 
 ### Install
 1. `git clone https://github.com/UnfocusedDrive/warp-gate.git` to copy to your current directory.

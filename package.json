@@ -1,7 +1,7 @@
 {
   "name": "@unfocused/warp-gate",
-  "version": "0.0.0-alpha.0",
   "description": "Rapidly deploy modern web apps.",
+  "version": "0.0.0-alpha.0",
   "private": true,
   "main": "src/index.js",
   "scripts": {
