@@ -1,19 +1,9 @@
 /**
- * Commonm Config
+ * Webpack Common Config
  */
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const path = require('path');
 
 module.exports = {
-  devServer: {
-    contentBase: './dist',
-  },
-  devtool: 'inline-source-map',
-  entry: './src/index.tsx',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
-  },
   module: {
     rules: [
       {
