@@ -1,53 +1,25 @@
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+/**
+ * Webpack Prod Config (Standalone App)
+ */
+
+const commonConfig = require('./webpack.common.config');
+const { merge } = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
-module.exports = {
+module.exports = merge(commonConfig, {
   devServer: {
     contentBase: './dist',
   },
-  devtool: 'inline-source-map',
   entry: './src/index.tsx',
+  devtool: 'inline-source-map',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  module: {
-    rules: [
-      {
-        test: /\.tsx?$|\.jsx?$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
-      },
-      {
-        test: /\.s[ac]ss$/i,
-        use: [
-          "style-loader",
-          "css-loader",
-          "sass-loader"
-        ],
-      },
-      {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          'file-loader'
-        ]
-      }
-    ]
-  },
-  resolve: {
-    extensions: ['.js', '.jsx', 'ts', 'tsx']
-  },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Warp Gate',
-    }),
-    new CleanWebpackPlugin()
+      title: 'Warp Gate'
+    })
   ]
-};
+});

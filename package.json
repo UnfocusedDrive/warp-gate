@@ -3,10 +3,16 @@
   "description": "Rapidly deploy modern web apps.",
   "version": "0.0.0-alpha.0",
   "private": true,
-  "main": "src/index.js",
+  "main": "lib/index.js",
+  "files": [
+    "dist",
+    "lib",
+    "src"
+  ],
   "scripts": {
-    "build": "webpack --mode=production",
-    "prepare": "npm run build",
+    "build": "npm run build-standalone && npm run build-lib",
+    "build-standalone": "webpack --mode=production",
+    "build-lib": "webpack --mode=production --config webpack.lib.config.js",
     "start": "webpack serve --mode=development --open",
     "start:production": "webpack serve --mode=production --open",
     "start-styleguide": "webpack serve --config styleguide/webpack.config.js",
@@ -43,7 +49,8 @@
     "typescript": "^4.6.3",
     "webpack": "^5.2.0",
     "webpack-cli": "^4.0.0",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.8.0"
   },
   "repository": {
     "type": "git",
