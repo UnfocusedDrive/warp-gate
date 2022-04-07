@@ -6,6 +6,7 @@ Includes the follow pre-packaged items:
 
 #### Tools
 - Webpack (v5) - For module bundling
+- TypeScript - Static type checking for JavaScript
 - Sass (v1) - CSS Precompiler
 - Basic CI/CD workflow template
 
