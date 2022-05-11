@@ -1,12 +1,12 @@
+#
 # Auto Deploy to VPS
-# Need the following for setup...
 #
 
 name: Build & Deploy
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
+  # Triggers the workflow on push with following branch
   push:
     branches: [ master ]
 
@@ -27,17 +27,16 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           username: ${{ secrets.SSH_USERNAME }}
           script: |
+            # DOWNLOAD AND INSTALL APP
             # cd /home/apps # go to app dir
-            # rm -rf memory-leak/ # wipe out app for fresh build
-            # git clone https://github.com/UnfocusedDrive/memory-leak.git # get latest
-            # cd memory-leak # go to app dir
+            # rm -rf {REPO_NAME}/ # wipe out app for fresh build
+            # git clone https://github.com/UnfocusedDrive/{REPO_NAME}.git # get latest
+            # cd {REPO_NAME} # go to app dir
             # npm install # get latest packages
-            # cd client # go to app client dir
-            # npm install # get latest packages on client
             # npm run build # build app
-            # rm -rf /var/www/unstable.memoryleak.ai/ # remove directory
-            # mkdir /var/www/unstable.memoryleak.ai
-            # sudo mv -i build/* /var/www/unstable.memoryleak.ai/ # move build to serve dir
-            # # git clone https://github.com/UnfocusedDrive/memory-leak.git
-            # echo 'Successfully deployed to unstable.memoryleak.ai'
 
+            # MOVE APP TO STAGING WWW
+            # rm -rf /var/www/unstable.memoryleak.ai/{DIR_NAME}/ # remove dir
+            # mkdir /var/www/unstable.memoryleak.ai/{DIR_NAME}/ # rebuild dir
+            # sudo mv -i dist/* /var/www/unstable.memoryleak.ai/{DIR_NAME}/ # move build to serve dir
+            # echo 'Successfully deployed to unstable.memoryleak.ai/{DIR_NAME}/'
