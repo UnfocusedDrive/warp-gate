@@ -25,8 +25,8 @@ Includes the following pre-packaged items:
 4. `npm install` to install.
 
 ### Run
-1. `npm run start` to run app in dev mode.
-2. `http://localhost:8080` to view in browser.
+1. `npm run start:open start:open` to run app in dev mode.
+2. `http://localhost:8080` will open automatically to view in browser.
 3. Get after some coding!
 
 ### Build
