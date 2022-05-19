@@ -1,5 +1,5 @@
 # warp-gate
-Rapidly deploy modern web apps.
+Rapidly deploy modern web apps. Just insert token here.
 
 ### Getting Started
 Includes the following pre-packaged items:
@@ -25,11 +25,15 @@ Includes the following pre-packaged items:
 4. `npm install` to install.
 
 ### Run
-1. `npm run start:open start:open` to run app in dev mode.
+1. `npm run start:open` to run app in dev mode.
 2. `http://localhost:8080` will open automatically to view in browser.
 3. Get after some coding!
 
 ### Build
 1. `npm run build` to generate a production build to `/dist` directory.
+
+
+Preview dev build:
+https://unstable.memoryleak.ai/warp-gate
 
 Thanks. Enjoy ~ ;)

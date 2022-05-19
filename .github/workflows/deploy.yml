@@ -29,14 +29,14 @@ jobs:
           script: |
             # DOWNLOAD AND INSTALL APP
             # cd /home/apps # go to app dir
-            # rm -rf {REPO_NAME}/ # wipe out app for fresh build
-            # git clone https://github.com/UnfocusedDrive/{REPO_NAME}.git # get latest
-            # cd {REPO_NAME} # go to app dir
+            # rm -rf warp-gate/ # wipe out app for fresh build
+            # git clone https://github.com/UnfocusedDrive/warp-gate.git # get latest
+            # cd warp-gate # go to app dir
             # npm install # get latest packages
             # npm run build # build app
 
-            # MOVE APP TO STAGING WWW
-            # rm -rf /var/www/unstable.memoryleak.ai/{DIR_NAME}/ # remove dir
-            # mkdir /var/www/unstable.memoryleak.ai/{DIR_NAME}/ # rebuild dir
-            # sudo mv -i dist/* /var/www/unstable.memoryleak.ai/{DIR_NAME}/ # move build to serve dir
-            # echo 'Successfully deployed to unstable.memoryleak.ai/{DIR_NAME}/'
+            # MOVE APP TO STAGING
+            # rm -rf /var/www/unstable.memoryleak.ai/warp-gate/ # remove dir
+            # mkdir /var/www/unstable.memoryleak.ai/warp-gate/ # rebuild dir
+            # sudo mv -i dist/* /var/www/unstable.memoryleak.ai/warp-gate/ # move build to serve dir
+            # echo 'Successfully deployed to unstable.memoryleak.ai/warp-gate/'

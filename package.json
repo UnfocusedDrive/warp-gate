@@ -1,6 +1,6 @@
 {
   "name": "@unfocused/warp-gate",
-  "description": "Rapidly deploy modern web apps.",
+  "description": "Rapidly deploy modern web apps. Just insert token here.",
   "version": "0.0.0-alpha.0",
   "private": true,
   "main": "lib/index.js",
