@@ -33,6 +33,7 @@ jobs:
             rm -rf warp-gate/ # wipe out app for fresh build
             git clone https://github.com/UnfocusedDrive/warp-gate.git # get latest
             cd warp-gate # go to app dir
+            git checkout node.js.backend # checkout specific branch
             npm install # get latest packages
             npm run build # build app
 
