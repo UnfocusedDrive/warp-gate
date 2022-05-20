@@ -2,7 +2,6 @@
  * Webpack Library Config (Library App)
  * The config file is for other packages to consume this one.
  */
-
 const commonConfig = require('./webpack.common.config');
 const { merge } = require('webpack-merge');
 const path = require('path');

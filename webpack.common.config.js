@@ -1,8 +1,6 @@
 /**
  * Webpack Common Config
  */
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-
 module.exports = {
   module: {
     rules: [
@@ -35,8 +33,5 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx']
-  },
-  plugins: [
-    new CleanWebpackPlugin()
-  ]
+  }
 };

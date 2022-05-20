@@ -32,10 +32,11 @@ jobs:
             rm -rf warp-gate/ # wipe out app for fresh build
             git clone https://github.com/UnfocusedDrive/warp-gate.git # get latest
             cd warp-gate # go to app dir
+            # git checkout node.js.backend # checkout specific branch
             npm install # get latest packages
             npm run build # build app
 
-            # MOVE APP TO STAGING
+            # MOVE APP TO STAGING DIRECTORY
             rm -rf /var/www/unstable.memoryleak.ai/warp-gate/ # remove dir
             mkdir /var/www/unstable.memoryleak.ai/warp-gate/ # rebuild dir
             sudo mv -i dist/* /var/www/unstable.memoryleak.ai/warp-gate/ # move build to serve dir
