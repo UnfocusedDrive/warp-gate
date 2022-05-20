@@ -4,6 +4,7 @@ import webpack from 'webpack'
 import webpackDevMiddleware from 'webpack-dev-middleware'
 import webpackHotMiddleware from 'webpack-hot-middleware'
 import config from '../../webpack.dev.config.js'
+import CONSTANT from './constants';
 
 const app = express(),
             DIST_DIR = __dirname,
@@ -27,9 +28,9 @@ app.get('*', (req, res, next) => {
   })
 })
 
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || CONSTANT.PORT;
 
 app.listen(PORT, () => {
-    console.log(`App listening to ${PORT}....`)
+    console.log(`App listening on Port ${PORT}`)
     console.log('Press Ctrl+C to quit.')
 })
