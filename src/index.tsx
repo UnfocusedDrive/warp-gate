@@ -15,7 +15,7 @@ function fetchIt() {
   })
   .then(res => console.log(res))
   .catch((error) => {
-    console.error('Error: Are you offline?', error);
+    console.error('Error: Is your API offline?', error);
   });
 }
 

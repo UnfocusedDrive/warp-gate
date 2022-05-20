@@ -5,9 +5,9 @@ Look no further. Your dream is right here. A wise man once said what are you dre
 electric sheep?
 
 Welcome to the warp gate. Launch a branch new full-stack app in less than 30 seconds, or your money
-back is guaranteed. If you paid in beer or coffee. Good luck getting that back.
+back is guaranteed. Unless you paid in beer or coffee. Good luck getting that back.
 
-### Teck Stack
+### Tech Stack
 Includes the following pre-packaged items:
 - Basic CI/CD (YML) workflow template
 - Webpack (v5) - For module bundling
@@ -30,7 +30,8 @@ Includes the following pre-packaged items:
 3. Get after some coding!
 
 ### OPTIONAL: Run Express (Node.js Backend)
-1. `npm run launch` in a separate terminal instance.
+2. `npm run build-server` to compile the server.
+2. `npm run launch` in a separate terminal instance.
 
 ### Build
 1. `npm run build` to generate a production build to `/dist` directory.
