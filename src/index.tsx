@@ -19,7 +19,6 @@ function fetchIt() {
   });
 }
 
-
 const App = () => {
   return (
     <div>

@@ -1,6 +1,9 @@
-# Packages
+# Webpack
+A good introduction:
+https://www.valentinog.com/blog/webpack/#webpack_4_production_and_development_mode
+
+## Packages
 - Babel - Webpack transpiler
-- Clean Webpack PLugin
 
 ## Loaders
 - Babel
